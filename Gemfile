@@ -5,6 +5,7 @@ ruby "3.1.2"
 
 gem 'webpacker'
 gem 'react-rails'
+gem 'pg'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
