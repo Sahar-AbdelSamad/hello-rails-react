@@ -1,12 +1,12 @@
-import React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react"
+import { useSelector, useDispatch } from "react-redux";
 
-class Greeting extends React.Component {
-  render () {
-    return (
-      <h1> Greetings </h1>
-    );
-  }
-}
+const Greeting = () => {
+  const greeting = useSelector((state) => state.greeting);
+
+  return (
+    <h1> { greeting } </h1>
+  );
+};
 
 export default Greeting
